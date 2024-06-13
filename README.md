@@ -1,1 +1,1 @@
-# code-inspection-workshop
+# CodeInspection
