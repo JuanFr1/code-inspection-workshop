@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ruleset name="Juan Rules"
-	 xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
-	http://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+<ruleset name="Juan Rules">
 
     <description>Code Inspection Lab, Juan Francisco Quimí Granados</description>
-    
+
     <rule ref="category/java/performance.xml" />
-    
+
     <rule ref="category/java/bestpractices.xml">
-		<exclude name="SystemPrintln" />
-	</rule>
+        <exclude name="SystemPrintln" />
+    </rule>
 
     <!-- ClassNamingConventions -->
     <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
