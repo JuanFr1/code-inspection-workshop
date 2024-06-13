@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset name="Juan Rules"
+	 xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+	http://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>Code Inspection Lab, Juan Francisco Quimí Granados</description>
+    
+    <rule ref="category/java/performance.xml" />
+    
+    <rule ref="category/java/bestpractices.xml">
+		<exclude name="SystemPrintln" />
+	</rule>
+
+    <!-- ClassNamingConventions -->
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
+
+    <!-- BeanMembersShouldSerialize -->
+    <rule ref="category/java/errorprone.xml/BeanMembersShouldSerialize">
+        <priority>2</priority>
+    </rule>
+
+    <!-- UseLocaleWithCaseConversions -->
+    <rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions"/>
+
+    <!-- CommentRequired -->
+    <rule ref="category/java/documentation.xml/CommentRequired">
+        <properties>
+            <property name="classCommentRequirement" value="Ignored"/>
+            <property name="headerCommentRequirement" value="Ignored"/>
+            <property name="fieldCommentRequirement" value="Ignored"/>
+        </properties>
+    </rule>
+
+</ruleset>
